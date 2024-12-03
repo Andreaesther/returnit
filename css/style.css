@@ -1,0 +1,68 @@
+/*Reset style*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Definerer fonts*/
+@font-face {
+    font-family: Poppin Light;
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: Poppin Black;
+    src: url(../fonts/Poppins/Poppins-Black.ttf);
+}
+/*Indsætter fonts*/
+h1{
+    font-family: Poppin Black;
+}
+body{
+    font-family: Poppin Light;
+}
+
+/*Navigationsbar*/
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{ /*Højde over navbar*/
+    height: 8rem;
+}
+nav a{ 
+    height: 100%;
+    padding: 0px 70px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{ /*Grå skygge når hover*/
+    color: #6c6c6c;
+}
+nav a:active { /*Sort når klik*/
+    color: black;
+}
+nav li:first-child{ /*Låser logo i venstre side*/
+    margin-right: auto;
+}
+
+/*Scroll til top button*/
+#scrollBtn{ /*Styling*/
+    display: none; /*Skjuler som standard*/
+    position: fixed; /*Låser samme sted*/
+    left: 50rem;
+    top: 1rem;
+    border: none;
+    background-color: #153024;
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#scrollBtn:hover { /*Skifter farve når hover*/
+    background-color: grey;
+}
