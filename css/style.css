@@ -66,3 +66,28 @@ nav li:first-child{ /*Låser logo i venstre side*/
 #scrollBtn:hover { /*Skifter farve når hover*/
     background-color: grey;
 }
+
+/*Chatbot*/
+.chatbot{ /*Styling og placering*/
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    width: 420px;
+    background: beige;/*skiftes*/
+    border-radius: 15px;
+    overflow: hidden;
+}
+.header{ /*Styling af header i chatbox*/
+    background: #154024;
+    padding: 16px 0;
+    text-align: center;
+}
+.header h2{
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+.chatbot .chatbox{
+    height: 510px;
+    overflow-y: auto;
+    padding: 15px 20px 70px;
+}
