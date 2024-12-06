@@ -91,3 +91,59 @@ nav li:first-child{ /*Låser logo i venstre side*/
     overflow-y: auto;
     padding: 15px 20px 70px;
 }
+
+/* Footer Styling */
+footer {
+    background-color: #153024;
+    color: #FFFFFF;
+    padding: 3rem 0;
+}
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*Styler links*/
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footer-links a:hover {
+    color: #6c6c6c;
+}
+
+/* Horisontal linje */
+.footer-line {
+    width: 80%; 
+    margin: 2rem auto;
+    border-top: 2px solid #0A937A;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+}
+.footer-contact a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.footer-contact a:hover {
+    color: #6c6c6c;
+}
+.footer-social {
+    display: flex;
+    gap: 1.5rem;
+}
+.footer-social img { /*Størrelse på sociale medier links*/
+    width: 57px;
+    height: 50px;
+}
