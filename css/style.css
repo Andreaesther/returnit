@@ -50,6 +50,8 @@ nav li:first-child{ /*Låser logo i venstre side*/
     margin-right: auto;
 }
 
+
+
 /*Scroll til top button*/
 #scrollBtn{ /*Styling*/
     display: none; /*Skjuler som standard*/
