@@ -366,6 +366,10 @@ footer {
     justify-content: center;
 }
 
+/* styling af tekst-beskrivelse*/
+.tekst-beskrivelse {
+    margin: 20px 50px 30px 180px;
+}
 
 /*Styling af video */
 video.animation-løsning {
