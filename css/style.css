@@ -355,5 +355,6 @@ footer {
 /*Giver logoerne margin-right*/
 .logo-slider img {
     margin: 0 40px;
+    border-radius: 10px;
 }
 
