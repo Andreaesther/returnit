@@ -149,3 +149,37 @@ footer {
     width: 57px;
     height: 50px;
 }
+
+
+/*FORSIDE*/
+/*Styling af statistik section*/
+.statistik h1{
+    font-size: 5rem;
+    text-align: center;
+}
+.statistik{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.kolonne{
+    flex:1;
+    max-width: 30rem;
+    padding: 4rem;
+}
+/*Styling af produkter*/
+.produkter{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.produkt-section{
+    flex: 1;
+    max-width: 35rem;
+    padding: 4rem;
+    border-style: solid;
+    border-width: medium;
+   
+    
+}
+/*Styling af feedback section*/
