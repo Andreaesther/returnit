@@ -278,7 +278,7 @@ footer {
     opacity: 1;
 }
 
-/*Styling og opsætning af overordnede produkt-container med produkt-kort*/
+/*Styling og opsætning af overordnede produkt-container med produkt-kort
 .collection-container {
     width: 100%;
     display: grid;
@@ -377,4 +377,10 @@ video.animation-løsning {
 .video-container {
     display: flex;
     justify-content: center;
+}
+
+.plast-fakta {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
 }
