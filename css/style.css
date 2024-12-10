@@ -149,3 +149,127 @@ footer {
     width: 57px;
     height: 50px;
 }
+
+
+/* Styling produkt-slider*/
+.produkter {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+
+/*Styling af h1 i produkt-slider*/
+.produkt-kategori {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+
+/*Styling af produkt-container*/
+.produkt-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+   
+}
+
+.produkt-container::-webkit-scrollbar{
+    display: none;
+}
+
+
+.produkt-kort {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+/* Styling af produkt billede*/
+.produkt-billede {
+    position: relative;
+    width: 15rem;
+    height: 20rem;
+    overflow: hidden;
+}
+
+/*Overordnede container med produkt-info*/
+.produkt-info {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+/*Styling af overskrift h6*/
+.produkt-brand {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Styling af produkt-information*/
+.produkt-beskrivelse {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0  30px 0;
+}
+
+/*Styling af pris*/
+.produkt-pris {
+    font-weight: 900;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling webshop-btn*/
+.webshop-btn {
+    text-decoration: none;
+    color: white;
+    background-color: #153024;
+    border: 2px solid;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/* Styling pre- og nxt-btn*/
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    cursor: pointer;
+    z-index: 9;
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
