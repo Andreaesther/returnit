@@ -175,7 +175,7 @@ footer {
     padding: 0 10vw;
     display: flex;
     scroll-behavior: smooth;
-    overflow-x: auto;
+    overflow-x: auto; /* gør at der laves en scroll-effekt når man scroller ned af siden og det "samarbejder" med JS*/
    
 }
 
@@ -312,3 +312,49 @@ footer {
     grid-column: span 2;
     margin-bottom: 10px;
 }
+
+/*Får logo-slider til at køre*/
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+
+/*Samarbejdspartnere og logo-slider*/
+
+.overskrift-samarbejdspartnere {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 50px 0px 40px 0px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+
+.logoer {
+    overflow: hidden;
+    padding: 20px 20px;
+    background: #153024;
+    white-space: nowrap;
+
+}
+
+.logoer:hover .logo-slider {
+    animation-play-state: paused; /*Når man holder musen over slideren, så stopper den med at køre*/
+}
+
+.logo-slider {
+    display: inline-block; /* placerer kopien af logoerne på linje med article 1 af logoer */
+    animation: 20s slide infinite linear; /*"kalder" på keyframe ved navn slide. "infinite" gør at looper igen og igen. "linear" gør animationen konstant, uden at speede op eller ned. Sekunderne styre hvor hurtigt animationen skal køre*/
+}
+
+/*Giver logoerne margin-right*/
+.logo-slider img {
+    margin: 0 40px;
+}
+
