@@ -358,3 +358,23 @@ footer {
     border-radius: 10px;
 }
 
+
+
+/*Styling af siden sådan fungerer det*/
+.overskrift {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Styling af video */
+video.animation-løsning {
+    width: 60%;
+    height: 50%;
+    
+}
+/*Placerer videoen i midten*/
+.video-container {
+    display: flex;
+    justify-content: center;
+}
