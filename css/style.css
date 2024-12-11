@@ -50,6 +50,15 @@ nav li:first-child{ /*Låser logo i venstre side*/
     margin-right: auto;
 }
 
+/*Styling af billede på forsiden*/
+.forside-billede img {
+    width: 100%;
+    height: 100%;
+    opacity: 65%;
+}
+
+
+
 /*Scroll til top button*/
 #scrollBtn{ /*Styling*/
     display: none; /*Skjuler som standard*/
