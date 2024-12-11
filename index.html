@@ -11,7 +11,11 @@
     <script src="js/back-to-top.js" defer></script>
     <script src="js/language.js" defer></script>
     <script src="js/produkt-slider.js" defer></script>
+
     <script src="js/plast.js" defer></script>
+
+    <script src="js/chatbot.js" defer></script>
+
     <link rel="icon" type="image/x-icon" href="#">
     <!--Indsætter link til ikoner-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
@@ -54,8 +58,6 @@
             <p>har positive bemærkninger omkring genbrug og genanvendelse af kopper.</p>
         </article>
     </section>
-    
-
     
 
     <!--Produkt-slider-->
@@ -155,33 +157,43 @@
         </article>
     </section>
 
-    <section class="feedback">
-        <h1>Feedback</h1>
-        <article>
-            <p>"Innovativt og bæredygtygt - Returnit gør det nemt at tænke grønt. Professionelt team og effektive løsninger!"</p>
-        </article>
-        <article>
-            <p>"Returnit gør virkelig en forskel i kampen mod plastspild. Deres fokus på genanvendelse og cirkulære løsninger er både innovativt og nødvendigt."</p>
-        </article>
-        <article>
-            <p>"Genialt koncept, der gør en forskel for miljøet. Kan kun anbefales."</p>
-        </article>
-    </section>
-    <section class="chatbot">
-        <article class="header">
-            <h2>Chatbot</h2> <!--Overskrift i box-->
-        </article>
-        <ul class="chatbox">
-            <li class="chat incoming">
-                <span class="material-symbols-outlined">smart_toy</span> <!--Indsætter robot ikon-->
-                <p>Hejsa👋<br> Hvad kan jeg hjælpe dig med?</p>
-            </li>
-        </ul>
-        <article class="chat-input"> <!--Laver tekstfelt-->
-            <textarea placeholder="Skriv din besked..."></textarea>
-            <span class="send-btn material-symbols-outlined">Send</span> <!--Indsætter send ikon-->
+    <section>
+        <h1 class="overskrift">Feedback</h1>
+        <article class="feedback">
+            <article class="feedback-section">
+                <p>"Innovativt og bæredygtygt - Returnit gør det nemt at tænke grønt. Professionelt team og effektive løsninger!"</p>
+            </article>
+            <article class="feedback-section">
+                <p>"Returnit gør virkelig en forskel i kampen mod plastspild. Deres fokus på genanvendelse og cirkulære løsninger er både innovativt og nødvendigt."</p>
+            </article>
+            <article class="feedback-section">
+                <p>"Genialt koncept, der gør en forskel for miljøet. Kan kun anbefales."</p>
+            </article>
         </article>
     </section>
+
+    <aside> <!--Chatbot-->
+        <button class="chatbot-toggler"> <!--Knap der åbner og lukker chatbot-->
+            <span class="material-symbols-outlined">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+        </button>
+
+        <section class="chatbot">
+            <article class="header">
+                <h2>Chatbot</h2> <!--Overskrift i box-->
+            </article>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span> <!--Indsætter robot ikon-->
+                    <p>Hejsa👋<br> Hvad kan jeg hjælpe dig med?</p> 
+                </li>
+            </ul>
+            <article class="chat-input"> <!--Laver tekstfelt-->
+                <textarea placeholder="Skriv din besked..." required></textarea>
+                <span class="send-btn material-symbols-outlined">Send</span> <!--Indsætter send ikon-->
+            </article>
+        </section>
+    </aside>  
 </main>
 
 <footer>
