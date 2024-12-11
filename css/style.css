@@ -77,6 +77,16 @@ section#tekstContainer{
     position: relative;
 }
 
+/* Styling af Call to action knap */
+a.cta-btn {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 450px;
+    font-size: 25px;
+}
+
+
 
 /*Scroll til top button*/
 #scrollBtn{ /*Styling*/
