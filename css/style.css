@@ -68,8 +68,32 @@ section#tekstContainer{
     position: absolute;
     height: 100%;
     width: 100%;
+    font-size: 30px;
+}
+
+/*Styling af call to action knap på forsiden */
+a.cta-btn {
+    text-decoration: none;
+    color: #fff;
+    justify-content: center;
     
 }
+
+.cta-btn {
+    display: flex;
+    justify-content: end;
+    margin-right: 400px;
+    margin-left: 900px;
+    font-size: 25px;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: #153024;
+    border-style: none;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
 
 
 /*Styling af billede på forsiden*/
@@ -544,7 +568,7 @@ video.animation-løsning {
     margin: 50px 0 0 0;
 }
 
-/*Styling af om os*/
+/*Styling af siden om os*/
 .omOs-tekst {
     margin: 20px 50px 30px 180px;
     
