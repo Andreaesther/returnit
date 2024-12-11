@@ -57,9 +57,7 @@ h1.forste-tekst {
     justify-content: flex-start;
     margin: 200px 20px 20px 180px;
     font-size: 50px;
-    
 }
-
 section#tekstContainer{
     display: flex;
     justify-content: flex-start;
@@ -68,10 +66,7 @@ section#tekstContainer{
     position: absolute;
     height: 100%;
     width: 100%;
-    
 }
-
-
 /*Styling af billede på forsiden*/
 .forside-billede img {
     width: 100%;
@@ -81,7 +76,6 @@ section#tekstContainer{
     margin-top: -300px;
     position: relative;
 }
-
 
 
 /*Scroll til top button*/
@@ -255,7 +249,7 @@ footer {
 /* Horisontal linje */
 .footer-line {
     width: 80%; 
-    margin: 2rem auto;
+    margin: 1rem auto;
     border-top: 2px solid #0A937A;
 }
 .footer-bottom {
@@ -280,7 +274,9 @@ footer {
     width: 57px;
     height: 50px;
 }
-
+.logo{
+    margin-top: -3rem;
+}
 
 /*FORSIDE*/
 /*Styling af statistik section*/
