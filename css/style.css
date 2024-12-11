@@ -117,6 +117,8 @@ section#tekstContainer{
     cursor: pointer;
     background: #153024;
     border-radius: 50%;
+    z-index: 100;
+    border: 2px solid #fff ;
 }
 .chatbot-toggler span{ /*Placerer ikon i midten*/
     position: absolute;
@@ -139,6 +141,7 @@ section#tekstContainer{
     background: #f2f2f2;
     border-radius: 15px;
     overflow: hidden;
+    z-index: 100;
 }
 .show-chatbot .chatbot{ /*når chatbot er synlig*/
     transform: scale(1);
