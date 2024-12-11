@@ -13,12 +13,19 @@
     font-family: Poppin Black;
     src: url(../fonts/Poppins/Poppins-Black.ttf);
 }
+@font-face {
+    font-family: Poppin Medium;
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
 /*Indsætter fonts*/
 h1{
     font-family: Poppin Black;
 }
 body{
     font-family: Poppin Light;
+}
+.bold{
+    font-family: Poppin Medium;
 }
 
 /*Navigationsbar*/
@@ -49,7 +56,18 @@ nav a:active { /*Sort når klik*/
 nav li:first-child{ /*Låser logo i venstre side*/
     margin-right: auto;
 }
-
+.baggrundsfarve{ /*Styling af navbar på undersider*/
+    background-color: #153024;
+  
+}
+.baggrundsfarve a{
+    color: #FFFFFF;
+}
+.header-line {/*Tilføjer vertikal streg*/
+    border-right: 2px solid #0A937A; 
+    padding-right: 20px;
+    height: 100%;
+}
 
 /* Styling af tekst over billede på forsiden*/
 h1.forste-tekst {
