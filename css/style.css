@@ -92,6 +92,8 @@ nav li:first-child{ /*Låser logo i venstre side*/
     cursor: pointer;
     background: #153024;
     border-radius: 50%;
+    z-index: 100;
+    border: 2px solid #fff ;
 }
 .chatbot-toggler span{ /*Placerer ikon i midten*/
     position: absolute;
@@ -114,6 +116,7 @@ nav li:first-child{ /*Låser logo i venstre side*/
     background: #f2f2f2;
     border-radius: 15px;
     overflow: hidden;
+    z-index: 100;
 }
 .show-chatbot .chatbot{ /*når chatbot er synlig*/
     transform: scale(1);
