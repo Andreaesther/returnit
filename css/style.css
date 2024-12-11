@@ -66,6 +66,7 @@ section#tekstContainer{
     position: absolute;
     height: 100%;
     width: 100%;
+    font-size: 30px;
 }
 /*Styling af billede på forsiden*/
 .forside-billede img {
