@@ -97,7 +97,13 @@ section#tekstContainer{
 }
 
 /* Styling af Call to action knap */
-a.cta-btn {
+
+
+.cta-btn {
+    background-color: #153024;
+    border-radius: 20px;
+    margin-left: 850px;
+    padding: 5px;
     text-decoration: none;
     display: flex;
     justify-content: end;
@@ -105,18 +111,17 @@ a.cta-btn {
     font-size: 25px;
     color: #fff;
     justify-content: center;
-    
+    position: relative;
 }
 
-.cta-btn {
-    cursor: pointer;
-    background-color: #153024;
-    border-radius: 20px;
-    margin-left: 850px;
-    padding: 5px;
+.cta-btn:hover {
+    background-color: #fff;
+    border: 2px solid;
 }
 
-
+a.cta-btn:hover{
+    color: #153024;
+}
 
 /*Scroll til top button*/
 #scrollBtn{ /*Styling*/
