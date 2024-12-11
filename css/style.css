@@ -85,6 +85,17 @@ a.cta-btn {
     justify-content: end;
     margin-right: 450px;
     font-size: 25px;
+    color: #fff;
+    justify-content: center;
+    
+}
+
+.cta-btn {
+    cursor: pointer;
+    background-color: #153024;
+    border-radius: 20px;
+    margin-left: 850px;
+    padding: 5px;
 }
 
 
