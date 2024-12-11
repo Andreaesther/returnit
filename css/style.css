@@ -376,6 +376,7 @@ footer {
     margin-right: 40px;
     border: 2px solid;
     border-radius: 20px;
+    d
 }
 /* Styling af produkt billede*/
 .produkt-billede img {
@@ -383,6 +384,7 @@ footer {
     width: 15rem;
     overflow: hidden;
 }
+
 /*Overordnede container med produkt-info*/
 .produkt-info {
     width: 100%;
