@@ -57,9 +57,7 @@ h1.forste-tekst {
     justify-content: flex-start;
     margin: 200px 20px 20px 180px;
     font-size: 50px;
-    
 }
-
 section#tekstContainer{
     display: flex;
     justify-content: flex-start;
@@ -68,34 +66,7 @@ section#tekstContainer{
     position: absolute;
     height: 100%;
     width: 100%;
-    font-size: 30px;
 }
-
-/*Styling af call to action knap på forsiden */
-a.cta-btn {
-    text-decoration: none;
-    color: #fff;
-    justify-content: center;
-    
-}
-
-.cta-btn {
-    display: flex;
-    justify-content: end;
-    margin-right: 400px;
-    margin-left: 900px;
-    font-size: 25px;
-    border: 2px solid;
-    border-radius: 20px;
-    background-color: #153024;
-    border-style: none;
-    padding: 5px;
-    cursor: pointer;
-
-}
-
-
-
 /*Styling af billede på forsiden*/
 .forside-billede img {
     width: 100%;
@@ -105,7 +76,6 @@ a.cta-btn {
     margin-top: -300px;
     position: relative;
 }
-
 
 
 /*Scroll til top button*/
@@ -279,7 +249,7 @@ footer {
 /* Horisontal linje */
 .footer-line {
     width: 80%; 
-    margin: 2rem auto;
+    margin: 1rem auto;
     border-top: 2px solid #0A937A;
 }
 .footer-bottom {
@@ -304,7 +274,9 @@ footer {
     width: 57px;
     height: 50px;
 }
-
+.logo{
+    margin-top: -3rem;
+}
 
 /*FORSIDE*/
 /*Styling af statistik section*/
