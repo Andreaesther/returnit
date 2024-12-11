@@ -50,11 +50,36 @@ nav li:first-child{ /*Låser logo i venstre side*/
     margin-right: auto;
 }
 
+
+/* Styling af tekst over billede på forsiden*/
+h1.forste-tekst {
+    display: flex;
+    justify-content: flex-start;
+    margin: 200px 20px 20px 180px;
+    font-size: 50px;
+    
+}
+
+section#tekstContainer{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 180px;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
 /*Styling af billede på forsiden*/
 .forside-billede img {
     width: 100%;
     height: 100%;
-    opacity: 65%;
+    opacity: 60%;
+    z-index: -1;
+    margin-top: -300px;
+    position: relative;
 }
 
 
