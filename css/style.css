@@ -117,6 +117,7 @@ section#tekstContainer{
 .cta-btn:hover {
     background-color: #fff;
     border: 2px solid;
+    position: relative;
 }
 
 a.cta-btn:hover{
