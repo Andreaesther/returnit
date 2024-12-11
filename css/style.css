@@ -84,6 +84,7 @@ section#tekstContainer{
     position: absolute;
     height: 100%;
     width: 100%;
+    font-size: 30px;
 }
 /*Styling af billede på forsiden*/
 .forside-billede img {
@@ -94,6 +95,27 @@ section#tekstContainer{
     margin-top: -300px;
     position: relative;
 }
+
+/* Styling af Call to action knap */
+a.cta-btn {
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 450px;
+    font-size: 25px;
+    color: #fff;
+    justify-content: center;
+    
+}
+
+.cta-btn {
+    cursor: pointer;
+    background-color: #153024;
+    border-radius: 20px;
+    margin-left: 850px;
+    padding: 5px;
+}
+
 
 
 /*Scroll til top button*/
@@ -558,7 +580,7 @@ video.animation-løsning {
     margin: 50px 0 0 0;
 }
 
-/*Styling af om os*/
+/*Styling af siden om os*/
 .omOs-tekst {
     margin: 20px 50px 30px 180px;
     
