@@ -50,8 +50,6 @@ nav li:first-child{ /*Låser logo i venstre side*/
     margin-right: auto;
 }
 
-
-
 /*Scroll til top button*/
 #scrollBtn{ /*Styling*/
     display: none; /*Skjuler som standard*/
@@ -70,17 +68,52 @@ nav li:first-child{ /*Låser logo i venstre side*/
 }
 
 /*Chatbot*/
+.chatbot-toggler{ /*Styling af knap der åbner og lukker chatbot*/
+    position: fixed;
+    right: 40px;
+    bottom: 35px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    background: #153024;
+    border-radius: 50%;
+}
+.chatbot-toggler span{ /*Placerer ikon i midten*/
+    position: absolute;
+}
+.show-chatbot .chatbot-toggler span:first-child,
+.chatbot-toggler span:last-child{ /*Skifter mellem ikonerne*/
+    opacity: 0;
+}
+.show-chatbot .chatbot-toggler span:last-child{
+    opacity: 1;
+}
 .chatbot{ /*Styling og placering*/
     position: fixed;
     right: 40px;
     bottom: 100px;
     width: 420px;
-    background: beige;/*skiftes*/
+    transform: scale(0.5); /*Starter osm skjult*/
+    opacity: 0; /*usynlig*/
+    pointer-events: none; /*tillader ikke interaktion*/
+    background: #f2f2f2;
     border-radius: 15px;
     overflow: hidden;
 }
+.show-chatbot .chatbot{ /*når chatbot er synlig*/
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+
+}
 .header{ /*Styling af header i chatbox*/
-    background: #154024;
+    background: #153024;
     padding: 16px 0;
     text-align: center;
 }
@@ -88,11 +121,75 @@ nav li:first-child{ /*Låser logo i venstre side*/
     color: #ffffff;
     font-size: 1.4rem;
 }
-.chatbot .chatbox{
+.chatbot .chatbox{ /*Styling af tekstbeskeder*/
     height: 510px;
-    overflow-y: auto;
-    padding: 15px 20px 70px;
+    overflow-y: auto; /*Scroller ved mange beskeder*/
+    padding: 30px 20px 70px;
 }
+.chatbot .chat{
+    display: flex;
+}
+.chatbox .outgoing{
+    justify-content: flex-end; /*Placerer brugerens besked til højre*/ 
+}
+.chatbot .chat p{
+    color: #fff;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    background: #153024;
+}
+.chatbox .incoming p{ /*Besked fra chatbot*/
+    color: #000000;
+    background: #fff ;
+    border-radius: 10px 10px 10px 0;
+}
+.chatbox .incoming span{ /*Styling af chatbot ikon*/
+    height: 32px;
+    width: 32px;
+    color: #ffffff;
+    align-self: flex-end;
+    background: #153024;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
+}
+.chatbot .chat-input{ /*Styler input felt*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    background: #fff;
+    padding: 5px 20px;
+    border-top: 1px solid #ccc;
+}
+.chat-input textarea{
+    height: 25px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    resize: none;
+    padding: 16px 15px 16px 0;
+}
+.chat-input span{ /*Styling af send knap*/
+    align-self: flex-end;
+    height: 55px;
+    line-height: 55px;
+    color: #153024;
+    font-size: 1.35rem;
+    cursor: pointer;
+    visibility: hidden; /*Skjult som standard*/
+    margin-left: -5rem;
+    margin-top: -5rem;
+}
+.chat-input textarea:valid ~ span{ /*Gør send knap synlig når der tekst*/
+    visibility: visible;
+}
+
+
 
 /* Footer Styling */
 footer {
@@ -106,7 +203,6 @@ footer {
     align-items: center;
     gap: 1rem;
 }
-
 /*Styler links*/
 .footer-links {
     display: flex;
@@ -119,14 +215,12 @@ footer {
 .footer-links a:hover {
     color: #6c6c6c;
 }
-
 /* Horisontal linje */
 .footer-line {
     width: 80%; 
     margin: 2rem auto;
     border-top: 2px solid #0A937A;
 }
-
 .footer-bottom {
     display: flex;
     justify-content: space-around;
@@ -167,22 +261,31 @@ footer {
     max-width: 30rem;
     padding: 4rem;
 }
-/*Styling af produkter*/
-.produkter{
+
+/*Styling af feedback section*/
+.feedback{
     display: flex;
     justify-content: center;
     gap: 5rem;
+    margin: 0 6rem;
 }
-.produkt-section{
-    flex: 1;
-    max-width: 35rem;
-    padding: 4rem;
-    border-style: solid;
-    border-width: medium;
-   
-    
+.feedback-section{
+    flex:1;
+    max-width: 30rem;
+    padding: 3rem;
+    background-color: #0A937A;
+    border-radius: 1rem;
+    margin-bottom: 10rem;
 }
-/*Styling af feedback section*/
+.overskrift{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    font-size: xx-large;
+    margin-top: 5rem;
+}
+
+
 
 /* Styling produkt-slider*/
 .produkter {
@@ -191,7 +294,6 @@ footer {
     padding: 20px;
     
 }
-
 /*Styling af h1 i produkt-slider*/
 .produkt-kategori {
     padding: 0 10vw;
@@ -202,21 +304,16 @@ footer {
     display: flex;
     justify-content: center;
 }
-
 /*Styling af produkt-container*/
 .produkt-container {
     padding: 0 10vw;
     display: flex;
     scroll-behavior: smooth;
     overflow-x: auto; /* gør at der laves en scroll-effekt når man scroller ned af siden og det "samarbejder" med JS*/
-   
 }
-
 .produkt-container::-webkit-scrollbar{
     display: none;
 }
-
-
 .produkt-kort {
     flex: 0 0 auto;
     width: 250px;
@@ -224,7 +321,6 @@ footer {
     margin-right: 40px;
     border: 2px solid;
     border-radius: 20px;
-    
 }
 /* Styling af produkt billede*/
 .produkt-billede img {
@@ -232,21 +328,18 @@ footer {
     width: 15rem;
     overflow: hidden;
 }
-
 /*Overordnede container med produkt-info*/
 .produkt-info {
     width: 100%;
     height: 100%;
     padding-top: 10px;
 }
-
 /*Styling af overskrift h6*/
 .produkt-brand {
     text-transform: uppercase;
     font-weight: bold;
     margin: 0 0 0 5px;
 }
-
 /* Styling af produkt-information*/
 .produkt-beskrivelse {
     width: 100%;
@@ -256,7 +349,6 @@ footer {
     margin: 5px 0  30px 0;
     margin: 0 0 0 5px;
 }
-
 /*Styling af pris*/
 .produkt-pris {
     font-weight: 900;
@@ -265,7 +357,6 @@ footer {
     justify-content: center;
     margin: 40px 0 0 5px;
 }
-
 /* Styling webshop-btn*/
 .webshop-btn {
     text-decoration: none;
@@ -276,11 +367,7 @@ footer {
     border-radius: 20px;
     display: flex;
     justify-content: center;
-
 }
-
-
-
 /* Styling pre- og nxt-btn*/
 .pre-btn,
 .nxt-btn {
@@ -296,16 +383,13 @@ footer {
     cursor: pointer;
     z-index: 9;
 }
-
 .nxt-btn {
     right: 0;
 }
-
 .pre-btn img,
 .nxt-btn img {
     opacity: 0.2;
 }
-
 .pre-btn:hover img,
 .nxt-btn:hover img {
     opacity: 1;

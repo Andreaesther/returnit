@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="genanvendelse, plastik, genanvendelse af plastik, event- og festivalbranchen">
-    <meta name="description" content="Returnit genanvender emballage til nye produkter">
-    <meta name="author" content="Carina og Andrea Esther">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Returnit</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/back-to-top.js" defer></script>
-    <script src="js/language.js" defer></script>
-    <link rel="icon" type="image/x-icon" href="#">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="genanvendelse, plastik, genanvendelse af plastik, event- og festivalbranchen">
+        <meta name="description" content="Returnit genanvender emballage til nye produkter">
+        <meta name="author" content="Carina og Andrea Esther">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Returnit</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/back-to-top.js" defer></script>
+        <script src="js/language.js" defer></script>
+        <script src="js/produkt-slider.js" defer></script>
+        <script src="js/chatbot.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="#">
+        <!--Indsætter link til ikoner-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    </head>
 
 <body>
 <!--Nav-bar-->
@@ -43,6 +47,29 @@
         <img class="citation-ikon" src="img/citations-tegn.webp" alt="citations-tegn">
         <p class="citat">"Vi designer løsninger, der er made to be <br> remade og bygger på cirkulære systemer <br>for en verden uden spild."</p>
     </section>
+
+    <aside> <!--Chatbot-->
+        <button class="chatbot-toggler"> <!--Knap der åbner og lukker chatbot-->
+            <span class="material-symbols-outlined">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+        </button>
+
+        <section class="chatbot">
+            <article class="header">
+                <h2>Chatbot</h2> <!--Overskrift i box-->
+            </article>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">smart_toy</span> <!--Indsætter robot ikon-->
+                    <p>Hejsa👋<br> Hvad kan jeg hjælpe dig med?</p> 
+                </li>
+            </ul>
+            <article class="chat-input"> <!--Laver tekstfelt-->
+                <textarea placeholder="Skriv din besked..." required></textarea>
+                <span class="send-btn material-symbols-outlined">Send</span> <!--Indsætter send ikon-->
+            </article>
+        </section>
+    </aside> 
 </main>
 
 <footer>
