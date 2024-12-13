@@ -12,15 +12,15 @@ let charIndex = 0;
 function typeEffect(text) {
     if (charIndex < text.length) {
         tekstContainer.textContent += text[charIndex]; // Tilføjer næste tegn
-        charIndex++; // Går til næste tegn
-        setTimeout(() => typeEffect(text), 100); // Kalder sig selv med en forsinkelse
+        charIndex++;                                    // Går til næste tegn
+        setTimeout(() => typeEffect(text), 100);        // Kalder sig selv med en forsinkelse
     } else {
         // Når hele teksten er skrevet, vent lidt, og vis næste beskrivelse
         setTimeout(showNextDescription, 2000); // 2 sekunders pause før næste beskrivelse
     }
 }
 
-// Funktion til at vise næste beskrivelse
+ // Funktion til at vise næste beskrivelse
 function showNextDescription() {
     if (currentIndex < jsonData.length) {
         tekstContainer.textContent = ''; // Ryd tekstContainer for at starte forfra
