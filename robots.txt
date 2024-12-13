@@ -1,0 +1,4 @@
+sitemap: 
+
+User-agent: Google-Extenden
+Disallow: /
