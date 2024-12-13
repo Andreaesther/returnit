@@ -97,8 +97,6 @@ section#tekstContainer{
 }
 
 /* Styling af Call to action knap */
-
-
 .cta-btn {
     background-color: #153024;
     border-radius: 20px;
@@ -113,13 +111,11 @@ section#tekstContainer{
     justify-content: center;
     position: relative;
 }
-
 .cta-btn:hover {
     background-color: #fff;
     border: 2px solid;
     position: relative;
 }
-
 a.cta-btn:hover{
     color: #153024;
 }
@@ -267,7 +263,6 @@ a.cta-btn:hover{
 }
 
 
-
 /* Footer Styling */
 footer {
     background-color: #153024;
@@ -329,6 +324,7 @@ footer {
 .statistik h1{
     font-size: 5rem;
     text-align: center;
+    margin-top: 3rem;
 }
 .statistik{
     display: flex;
@@ -363,15 +359,15 @@ footer {
     font-size: xx-large;
     margin-top: 5rem;
 }
-
-
+.whitespace{
+    margin-top: 7rem;
+}
 
 /* Styling produkt-slider*/
 .produkter {
     position: relative;
     overflow: hidden;
-    padding: 20px;
-    
+    padding: 80px;
 }
 /*Styling af h1 i produkt-slider*/
 .produkt-kategori {
@@ -383,6 +379,7 @@ footer {
     display: flex;
     justify-content: center;
 }
+
 /*Styling af produkt-container*/
 .produkt-container {
     padding: 0 10vw;
@@ -400,8 +397,8 @@ footer {
     margin-right: 40px;
     border: 2px solid;
     border-radius: 20px;
-    
 }
+
 /* Styling af produkt billede*/
 .produkt-billede img {
     position: relative;
@@ -476,40 +473,6 @@ footer {
     opacity: 1;
 }
 
-/*Styling og opsætning af overordnede produkt-container med produkt-kort
-.collection-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-}
-
-.collection {
-    position: relative;
-}
-
-.collection img{ 
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.collection p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    text-transform: capitalize;
-}
-
-.collection:nth-child(3) {
-    grid-column: span 2;
-    margin-bottom: 10px;
-}
-
 /*Får logo-slider til at køre*/
 @keyframes slide {
     from {
@@ -518,7 +481,6 @@ footer {
     to {
         transform: translateX(-100%);
     }
-    
 }
 
 /*Samarbejdspartnere og logo-slider*/
@@ -526,7 +488,7 @@ footer {
     padding: 0 10vw;
     font-size: 30px;
     font-weight: 500;
-    margin: 50px 0px 40px 0px;
+    margin: 80px 0px 40px 0px;
     text-transform: capitalize;
     display: flex;
     justify-content: center;
@@ -538,7 +500,6 @@ footer {
     padding: 20px 20px;
     background: #153024;
     white-space: nowrap;
-
 }
 
 .logoer:hover .logo-slider {
@@ -556,8 +517,6 @@ footer {
     border-radius: 10px;
 }
 
-
-
 /*Styling af siden sådan fungerer det*/
 .overskrift {
     display: flex;
@@ -574,13 +533,12 @@ footer {
 video.animation-løsning {
     width: 60%;
     height: 50%;
-    
 }
 /*Placerer videoen i midten*/
 .video-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin: 5rem 0 10rem 0;
 }
 
 /*Styling af overskrift til fakta om plastik*/
@@ -592,16 +550,14 @@ video.animation-løsning {
 
 /*Styling af siden om os*/
 .omOs-tekst {
-    margin: -20px 50px 30px 180px;
-    
+    margin: 0px 50px 30px 180px;
 }
-
 
 /*Styling af citat-container*/
 .citat-container {
     background: #0A937A;
     border-radius: 20px;
-    margin: 0 300px 30px 300px;
+    margin: 100px 300px 100px 300px;
     border: 20px solid #0A937A;
 
 }
@@ -611,5 +567,5 @@ p.citat {
     justify-content: center;
     font-size: 25px;
     margin: -60px 0 0px 0;
+    padding-bottom: 3rem;
 }
-
