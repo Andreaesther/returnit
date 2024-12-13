@@ -46,6 +46,7 @@ nav a{
     display: flex;
     align-items: center;
     color: black;
+    font-size: larger;
 }
 nav a:hover{ /*Grå skygge når hover*/
     color: #6c6c6c;
@@ -92,7 +93,7 @@ section#tekstContainer{
     height: 100%;
     opacity: 60%;
     z-index: -1;
-    margin-top: -300px;
+    margin-top: -330px;
     position: relative;
 }
 
