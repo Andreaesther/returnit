@@ -571,6 +571,17 @@ p.citat {
     padding-bottom: 3rem;
 }
 
+/*Styling af video på om os*/
+video.om-os {
+    width: 45%;
+    height: 45%;
+}
+
+.om-os-video {
+    display: flex;
+    justify-content: end;
+    margin: -310px 200px 0px 0px;
+}
 
 /*Styling af 404-side*/
 video.error-animation {
