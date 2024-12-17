@@ -1,4 +1,4 @@
-sitemap: 
+sitemap: http://returnit.andreaesther.dk/index.html
 
 User-agent: Google-Extenden
 Disallow: /
